@@ -5,7 +5,9 @@ gem 'haml-rails'
 gem 'bootstrap-sass', '2.0.4'
 gem 'twitter'
 
+
 group :development, :test do
+  gem 'sqlite3', '1.3.5'
   gem 'pry-rails', :group => :development
   gem 'rspec-rails', '2.11.0'
 end
