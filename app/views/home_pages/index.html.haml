@@ -1,0 +1,12 @@
+%h1 Home page
+= form_tag home_pages_path, :method => :get do
+  = text_field(:twitter, :handle)
+  =submit_tag "Submit"
+%p
+  - if @tweets_hash
+    -@tweets_hash.each do |k, v|
+      %p
+        = "#{k} => #{v}"
+%div.hidden
+  =@hash      
+%div#example{ :style => "width: 300px; height: 300px;" }

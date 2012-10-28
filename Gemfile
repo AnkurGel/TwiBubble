@@ -4,11 +4,14 @@ gem 'rails', '3.2.8'
 gem 'haml-rails'
 gem 'bootstrap-sass', '2.0.4'
 gem 'twitter'
-
+gem 'thin'
+gem 'gon'
+gem 'jqcloud-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'pry-rails', :group => :development
+  gem 'debugger'
   gem 'rspec-rails', '2.11.0'
 end
 

@@ -1,6 +1,6 @@
 TwiBubble::Application.routes.draw do
-
-  root to: 'home_pages#home'
+  resources :home_pages
+  root to: 'home_pages#index'
   match '/about', to: 'home_pages#about'
 
   # The priority is based upon order of creation:
