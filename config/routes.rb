@@ -1,5 +1,9 @@
 TwiBubble::Application.routes.draw do
+
+  get "cloud_controller/create"
+
   resources :home_pages
+  resources :clouds, :only => [:create]
   root to: 'home_pages#index'
   match '/about', to: 'home_pages#about'
 

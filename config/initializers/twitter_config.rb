@@ -1,4 +1,5 @@
 #Added app's credentials in YAML and git ignored the file for safety.
+#Define the below mentioned variables in secret_credentials.yaml in your Rails.root.
 data = YAML.load(File.open(File.expand_path(Rails.root + 'secret_credentials.yaml')))
 
 Twitter.configure do |config|

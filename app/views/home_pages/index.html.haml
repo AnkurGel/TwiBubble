@@ -1,12 +1,9 @@
 %h1 Home page
-= form_tag home_pages_path, :method => :get do
-  = text_field(:twitter, :handle)
-  =submit_tag "Submit"
-%p
-  - if @tweets_hash
-    -@tweets_hash.each do |k, v|
-      %p
-        = "#{k} => #{v}"
+= form_for(:cloud, url: clouds_path) do |f|
+
+  = f.text_field :twitter_handle
+  = f.submit "Generate Cloud", class: 'btn btn-large btn-primary'
+
 %div.hidden
   =@hash      
 %div#example{ :style => "width: 300px; height: 300px;" }
