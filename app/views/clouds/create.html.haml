@@ -1,6 +1,6 @@
--# %p
--#   -if @tweets_hash
--#     - @tweets_hash.each do |k, v|
--#       %p
--#         = "#{k} => #{v}"
+%p
+  -if @tweets_hash
+    - @tweets_hash.each do |k, v|
+      %p
+        = "#{k} => #{v}"
 %div#TwiBubble{ :style => "width: 500px; height: 500px;" }

@@ -15,18 +15,6 @@
 //= require_tree .
 //= require jqcloud
 
-// if (gon.hash)
-//   alert(gon.hash);
-
-
-// var word_array = [
-//   {text: "15", weight: 15},
-//   {text: "9", weight: 9, link: "http://jquery.com/"},
-//   {text: "6", weight: 6, html: {title: "I can haz any html attribute"}},
-//   {text: "7", weight: 7},
-  
-//   {text: "5", weight: 5}
-// ];
 
 var word_array = new Array();
 var tweets = gon.tweets;
