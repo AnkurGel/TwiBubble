@@ -1,9 +1,16 @@
-%h1 Home page
-= form_for(:cloud, url: clouds_path) do |f|
-
-  = f.text_field :twitter_handle
-  = f.submit "Generate Cloud", class: 'btn btn-large btn-primary'
-
-%div.hidden
-  =@hash      
-%div#example{ :style => "width: 300px; height: 300px;" }
+%div.center.hero-unit
+  %h1
+    TwiBubble
+  %div#error_explanation
+  
+  = form_for(:cloud, url: clouds_path) do |f|
+    %div.field
+      = f.text_field :twitter_handle, :placeholder => "Enter twitter handle..."
+    %div.field
+      Tweets:
+      = f.text_field :tweets_count
+      /%input{:type => 'text', :id => 'tweets_count'}
+    %div.field
+      %div#slider-range-min
+    %div.field
+    = f.submit "Generate Cloud", class: 'btn btn-large btn-primary'

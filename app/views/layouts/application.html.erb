@@ -5,11 +5,37 @@
   <%= include_gon %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <header class = "navbar navbar-fixed-top">
+    <div class = "navbar-inner">
+      <div class="container">
+        <a href="https://github.com/">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+        </a>
+        <%= link_to "TwiBubble", root_path, id: 'logo' %>
+        <nav>
+          <ul class = "nav pull-right">
+            <li><%= link_to "About", '#' %></li>
+            <% unless home_page? %>
+            <li><%= link_to "Try another", root_path %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class = "container">
+    <%= yield %>
+    <footer class = "footer">
+      Application by <a href="http://twitter.com/AnkurGel"">Ankur Goel</a>
+    </footer>
+
+  </div>
 
 </body>
 </html>

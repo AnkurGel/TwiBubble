@@ -1,6 +1,9 @@
-%p
-  -if @tweets_hash
-    - @tweets_hash.each do |k, v|
-      %p
-        = "#{k} => #{v}"
-%div#TwiBubble{ :style => "width: 500px; height: 500px;" }
+-# %p
+-#   -if @tweets_hash
+-#     - @tweets_hash.each do |k, v|
+-#       %p
+-#         = "#{k} => #{v}"
+%div#TwiBubble{ :style => "width: 400px; height: 400px;" }
+  Showing information for
+  =@tweets_count
+  tweets
