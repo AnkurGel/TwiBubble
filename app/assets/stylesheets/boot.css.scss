@@ -171,9 +171,18 @@ input:-webkit-input-placeholder{
     margin: 60px 20px;
 }
 input#cloud_tweets_count {
-    border: 0; color: #f6931f; background-color: #eee; box-shadow: none; margin-top: 10px; font-weight: bold; width: 3%;
+    border: 0;
+    color: #f6931f;
+    background-color: #eee;
+    box-shadow: none;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 4%;
 }
 div#slider-range-min {
     width: 50%;
     margin: 0px 200px 10px;
+}
+div#TwiBubble{
+    margin: 0 200px;
 }

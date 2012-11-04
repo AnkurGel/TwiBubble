@@ -1,8 +1,7 @@
--# %p
--#   -if @tweets_hash
--#     - @tweets_hash.each do |k, v|
--#       %p
--#         = "#{k} => #{v}"
+%div#user_info
+  %div.field
+    = image_tag @image_url
+  
 %div#TwiBubble{ :style => "width: 400px; height: 400px;" }
   Showing information for
   =@tweets_count

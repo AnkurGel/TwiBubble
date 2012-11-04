@@ -30,7 +30,7 @@ $(document).ready(function(){
     else
       {
         $(this).removeClass('btn-primary');
-        $(this).addClass('btn-danger');
+        $(this).addClass('btn-danger disabled');
         $(this).attr('value', 'Please Wait..');
       }
   });
