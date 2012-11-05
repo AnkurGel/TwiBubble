@@ -8,11 +8,12 @@
       = f.text_field :twitter_handle, :placeholder => "Enter twitter handle..."
       
     %div.field
-      = f.radio_button :type, 'frequency', :checked => true
+      = f.radio_button :type, 'phrases', :checked => true
+      = label :cloud_type, 'phrases', :class => 'radio_label'
+      
+      = f.radio_button :type, 'frequency'
       = label :cloud_type, 'frequency', :class => 'radio_label'
 
-      = f.radio_button :type, 'phrases'
-      = label :cloud_type, 'phrases', :class => 'radio_label'
       
     %div.field
       Tweets:
