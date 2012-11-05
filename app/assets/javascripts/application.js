@@ -29,9 +29,21 @@ $(document).ready(function(){
       }
     else
       {
+        var x = true;
+        if ($("input#cloud_type_phrases") && ($("input#cloud_tweets_count").val() > 40))
+          {
+            if (confirm("Process may be intensive while generating the cloud. We suggest taking less count for phrases. Proceed anyway?"))
+              { }
+            else
+              {
+                x = false;
+              event.preventDefault();
+              }
+          }
+        if (x){
         $(this).removeClass('btn-primary');
         $(this).addClass('btn-danger disabled');
-        $(this).attr('value', 'Please Wait..');
+        $(this).attr('value', 'Please Wait..');}
       }
   });
   $("input#cloud_twitter_handle").keydown(function(){

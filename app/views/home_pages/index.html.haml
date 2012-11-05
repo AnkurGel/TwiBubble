@@ -6,6 +6,14 @@
   = form_for(:cloud, url: clouds_path) do |f|
     %div.field
       = f.text_field :twitter_handle, :placeholder => "Enter twitter handle..."
+      
+    %div.field
+      = f.radio_button :type, 'frequency', :checked => true
+      = label :cloud_type, 'frequency', :class => 'radio_label'
+
+      = f.radio_button :type, 'phrases'
+      = label :cloud_type, 'phrases', :class => 'radio_label'
+      
     %div.field
       Tweets:
       = f.text_field :tweets_count

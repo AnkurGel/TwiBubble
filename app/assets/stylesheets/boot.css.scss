@@ -157,18 +157,21 @@ input#cloud_twitter_handle {
 input[type="text"]:focus {
     border-color: rgba(182, 168, 236, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(182, 168, 236, 0.8);
+    /* Bootstrap being bootstrapped */
 }
 input:-moz-placeholder{
   color: #999999;
 }
 input:-ms-input-placeholder{
   color: #999999;
+  /* textbox's placeholder color. You look better in light, hun */
 }
 input:-webkit-input-placeholder{
   color: #999999;
 }
 #fail_whale {
     margin: 60px 20px;
+    /* Damn! I love whales - AnkurGel */
 }
 input#cloud_tweets_count {
     border: 0;
@@ -184,9 +187,13 @@ div#slider-range-min {
     margin: 0px 200px 10px;
 }
 div#TwiBubble{
-    margin: 0 200px;
+    width: 900px;
+    height: 500px;
 }
 #follow_me {
     float: right;
 }
-
+.radio_label {
+    display: inline; /* overriding default block
+                        display to show radio button inline with lable */
+}
