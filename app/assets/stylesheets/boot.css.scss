@@ -12,7 +12,9 @@ html{
 body{
     padding-top: 60px;
 }
-
+.container {
+    width: 1040px;
+}
 section{
     overflow: auto;
 }
@@ -184,7 +186,7 @@ input#cloud_tweets_count {
 }
 div#slider-range-min {
     width: 50%;
-    margin: 0px 200px 10px;
+    margin: 0px 230px 10px;
 }
 div#TwiBubble{
     width: 900px;
