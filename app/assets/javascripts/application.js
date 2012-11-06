@@ -49,6 +49,7 @@ $(document).ready(function(){
   $("input#cloud_twitter_handle").keydown(function(){
     $(this).attr('placeholder', '@AnkurGel');
   });
+  $("input#cloud_twitter_handle").keyup(function(){$(this).attr('placeholder', 'Enter twitter handle...');});
 });
 
 $(function(){
