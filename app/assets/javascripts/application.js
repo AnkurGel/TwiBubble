@@ -30,7 +30,7 @@ $(document).ready(function(){
     else
       {
         var x = true;
-        if ($("input#cloud_type_phrases") && ($("input#cloud_tweets_count").val() > 40))
+        if (!($("input#cloud_type_frequency").attr('checked')) && ($("input#cloud_tweets_count").val() > 40))
           {
             if (confirm("Process may be intensive while generating the cloud. We suggest taking less count for phrases. Proceed anyway?"))
               { }
