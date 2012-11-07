@@ -18,7 +18,7 @@
 $(document).ready(function(){
   $("input[type=\"submit\"]").click(function(event){
     $("#error_explanation span").remove();
-    if ($("#cloud_twitter_handle").attr('placeholder') == "Enter twitter handle...")
+    if ($("#cloud_twitter_handle").val() == "")
       {
 
         $("#error_explanation").fadeOut();
