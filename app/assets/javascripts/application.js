@@ -46,6 +46,8 @@ $(document).ready(function(){
         $(this).attr('value', 'Please Wait..');}
       }
   });
+  $("a#flash_link").animate({letterSpacing:'2px'}
+                            , 'slow').effect("highlight", {color: "yellow"} , 4000);
   $("input#cloud_twitter_handle").keydown(function(){
     $(this).attr('placeholder', '@AnkurGel');
   });

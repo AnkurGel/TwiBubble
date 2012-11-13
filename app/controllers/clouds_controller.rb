@@ -15,7 +15,7 @@ class CloudsController < ApplicationController
         else
           @tweets_round = Twitter.user_timeline(params['cloud']['twitter_handle'], :exclude_replies => true, :count => 100)
         end
-        last_tweet_id = @tweets_round.last.id
+        last_tweet_id = @tweets_round.last.id if @tweets_round.last
         @tweets_round.map(&:text).each do |tweet|
           if @tweets.count != params['cloud']['tweets_count'].to_i
             @tweets.push(tweet.strip)
